@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public class ProductRepositoryImpl implements ProductRepository {
 
-    private final Product penguinEars = new Product("P001", "Penguin-ars", new BigDecimal(175), 20);
+    private final Product penguinEars = new Product("P001", "Penguin-ears", new BigDecimal(175), 20);
     private final Product horseshoe = new Product("P002", "HorseShoe", new BigDecimal(825), 5);
 
     @Override

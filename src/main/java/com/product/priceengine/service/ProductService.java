@@ -28,12 +28,12 @@ public class ProductService {
         List<ActualPriceDTO> actualPriceDTOS = new ArrayList<>();
 
         products.forEach(product -> {
-            ActualPriceDTO actualPriceDTO = new ActualPriceDTO(product.getName());
-            for (int i=0; i < 50; i++) {
-                actualPriceDTO.setQuantity(i++);
+            for (int i=1; i < 51; i++) {
+                ActualPriceDTO actualPriceDTO = new ActualPriceDTO(product.getName());
+                actualPriceDTO.setQuantity(i);
                 actualPriceDTO.setQuantityPrice(orderService.calculatePricePerProduct(product, i, false));
+                actualPriceDTOS.add(actualPriceDTO);
             }
-            actualPriceDTOS.add(actualPriceDTO);
         });
 
         return actualPriceDTOS;
