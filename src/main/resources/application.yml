@@ -3,3 +3,4 @@ spring:
     name: priceengine
 server:
   port: 8080
+  address: localhost

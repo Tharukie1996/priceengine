@@ -10,8 +10,8 @@ import java.util.List;
 @Component
 public class ProductRepositoryImpl implements ProductRepository {
 
-    private final Product penguinEars = new Product("P001", "Penguin-ears", new BigDecimal(175), 20);
-    private final Product horseshoe = new Product("P002", "HorseShoe", new BigDecimal(825), 5);
+    private final Product penguinEars = new Product("P001", "Penguin-ears", new BigDecimal("175.00"), 20);
+    private final Product horseshoe = new Product("P002", "HorseShoe", new BigDecimal("825.00"), 5);
 
     @Override
     public List<Product> getAllProducts() {
